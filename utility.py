@@ -42,6 +42,7 @@ def save_imgs(model_name, images, plot_dim=(10,10), size=(10,10), name=None):
     for i in range(num_examples):
         plt.subplot(plot_dim[0], plot_dim[1], i+1)
         img = images[i, :]
+
         if img.shape[2] == 1:
             img = img.reshape((28, 28))
             plt.imshow(img, cmap="gray")
