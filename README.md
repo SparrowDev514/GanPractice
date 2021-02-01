@@ -10,4 +10,5 @@
 - [x] パッケージのバージョンを pip freeze みたいなやつでまとめる
 - [x] `pip install -r requirements.txt`　みたいなやつで入れられるようにする
 
+##環境構築
 `conda env create --file WganPracEnv.yaml`を実行すれば WganPracEnv という仮想環境が出来上がり、WGAN のコードを走らせることができるはず
