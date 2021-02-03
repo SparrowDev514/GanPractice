@@ -11,4 +11,6 @@ http://yusuke-ujitoko.hatenablog.com/entry/2017/05/20/145924
 
 `conda env create --file WganPracEnv.yaml`を実行すれば WganPracEnv という仮想環境が出来上がり、WGAN のコードを走らせることができるはず
 
-### keras で書き換えたい
+# TODO
+
+- [ ] Keras でリファクタリングする
