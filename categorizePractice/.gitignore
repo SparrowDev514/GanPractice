@@ -1,7 +1,5 @@
 .DS_Store
 .git/
 .idea/
-myDataSets/inputFile/
-myDataSets/martial/
 myDataSets/mydatasets.npz
 myDataSets/train.hdf5
