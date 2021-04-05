@@ -23,6 +23,7 @@ for i in l:
         for target_file in m:
             origin_image = ("categorizePractice/myDataSets/inputFile/" + i + "/" + target_file)
             if origin_image.split(".")[1] == "gitignore":
+                print(origin_image)
             else:
                 print("origin_image",origin_image)
                 cascade = cv2.CascadeClassifier(cascade_path)
