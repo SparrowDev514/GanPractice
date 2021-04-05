@@ -10,7 +10,6 @@ X_test = []
 Y_test = []
 
 l = os.listdir("categorizePractice/myDataSets/inputFile")
-print(l)
 for i in l:
     result_dir = i.split(".")[0]
     os.mkdir("categorizePractice/myDataSets/martial/" + result_dir)
