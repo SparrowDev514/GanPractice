@@ -16,7 +16,6 @@ for i in l:
     if result_dir == "":
         print("this is config file")
     else:
-        print(result_dir)
         os.mkdir("categorizePractice/myDataSets/martial/" + result_dir)
         m = os.listdir("categorizePractice/myDataSets/inputFile/" + i)
         n = 0
@@ -25,7 +24,6 @@ for i in l:
             if origin_image.split(".")[1] == "gitignore":
                 print(origin_image)
             else:
-                print("origin_image",origin_image)
                 cascade = cv2.CascadeClassifier(cascade_path)
                 image = cv2.imread(origin_image)
                 image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
