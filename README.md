@@ -14,3 +14,4 @@ http://yusuke-ujitoko.hatenablog.com/entry/2017/05/20/145924
 # TODO
 
 - [ ] Keras でリファクタリングする
+- [ ] 教師データの入り口を npy にする
