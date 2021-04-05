@@ -1,9 +1,9 @@
 .DS_Store
 .git/
 .idea/
-martial/0/
-martial/1/
-martial/2/
-inputFile/0/
-inputFile/1/
-inputFile/2/
+categorizePractice/myDataSets/inputFile/0
+categorizePractice/myDataSets/inputFile/1
+categorizePractice/myDataSets/inputFile/2
+categorizePractice/myDataSets/martial/0
+categorizePractice/myDataSets/martial/1
+categorizePractice/myDataSets/martial/2
