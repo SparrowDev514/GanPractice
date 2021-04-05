@@ -4,10 +4,10 @@ from keras.utils import np_utils
 import os
 os.environ['KMP_DUPLICATE_LIB_OK']='True'
 
-categories = ["morihei", "kyuzo", "tetsizan"]
+categories = ["0", "1", "2"]
 nb_classes = len(categories)
 
-f = np.load("/Users/murakamikei/Desktop/pracCategorize/myDataSets/mydatasets.npz")
+f = np.load("categorizePractice/myDataSets/mydatasets.npz")
 X_train, Y_train = f['x_train'], f['y_train']
 X_test, Y_test = f['x_test'], f['y_test']
 f.close()
@@ -38,13 +38,13 @@ model.add(layers.Dense(nb_classes, activation="softmax"))
 model.summary()
 
 json_string = model.to_json()
-open("/Users/murakamikei/Desktop/pracCategorize/myDataSets/train.json", "w").write(json_string)
+open("categorizePractice/myDataSets/train.json", "w").write(json_string)
 
 model.compile(loss="categorical_crossentropy", optimizer="rmsprop", metrics=["acc"])
 
 model.fit(x_train, y_train, epochs=8, batch_size=256, validation_data=(x_test, y_test))
 
-model.save_weights("/Users/murakamikei/Desktop/pracCategorize/myDataSets/train.hdf5")
+model.save_weights("categorizePractice/myDataSets/train.hdf5")
 
 score = model.evaluate(x_test, y_test, verbose=0)
 print("test loss : ", score[0])
