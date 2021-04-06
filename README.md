@@ -5,7 +5,9 @@
 
 # 参考
 
-http://yusuke-ujitoko.hatenablog.com/entry/2017/05/20/145924
+http://yusuke-ujitoko.hatenablog.com/entry/2017/05/20/145924<br>
+https://sinyblog.com/deaplearning/dcgan-001/#i<br>
+https://qiita.com/skyfish20ch/items/781407972c84de05af60
 
 ## 環境構築
 
