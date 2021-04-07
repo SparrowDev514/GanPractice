@@ -15,5 +15,5 @@ https://qiita.com/skyfish20ch/items/781407972c84de05af60
 
 # TODO
 
-- [ ] Keras でリファクタリングする
 - [ ] 教師データの入り口を npy にする
+- [ ] graphvis を使えるようにする
