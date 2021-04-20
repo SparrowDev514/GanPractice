@@ -15,5 +15,9 @@ https://qiita.com/skyfish20ch/items/781407972c84de05af60
 
 # TODO
 
-- [ ] 教師データの入り口を npy にする
-- [ ] graphvis を使えるようにする
+- [x] 教師データの入り口を npy にする
+
+- [x] graphvis を使えるようにする
+- [] 初回と二回目以降を if 文で切り分けられる様にする
+- [] 水増しくんの吐き出し先を`npyPractice/data/`にする
+- [] 入力画像サイズを変更できる様にする
