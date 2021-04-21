@@ -22,3 +22,4 @@ https://qiita.com/skyfish20ch/items/781407972c84de05af60
 - [ ] 入力画像サイズを変更できる様にする
 - [ ] 水増しくんの吐き出し先を`npyPractice/data/`にする
 - [ ] print 文（image shape のやつ）が大量に出るのでどうにかする
+- [ ] Conv2DTranspose 調べる
