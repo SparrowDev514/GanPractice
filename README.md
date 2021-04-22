@@ -13,7 +13,7 @@
 ## 環境構築
 
 1. 環境をまとめた yaml ファイル(EnvName.yaml とする)を作る
-2. `conda env create --file EnvName.yaml`を実行すればという仮想環境が出来上がり、コードを走らせることができるはず
+2. `conda env create --file EnvName.yaml`を実行すれば仮想環境が出来上がり、コードを走らせることができるはず
 
 ## TODO
 
@@ -31,7 +31,7 @@
 
 - [ ] npy を入り口として動かす
 
-### 参考
+## 参考
 
 http://yusuke-ujitoko.hatenablog.com/entry/2017/05/20/145924<br>
 https://sinyblog.com/deaplearning/dcgan-001/#i<br>
