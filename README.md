@@ -21,10 +21,9 @@
 
 - [x] 教師データの入り口を npy にして DCGAN を動かす
 - [x] graphvis を使えるようにする
-- [ ] 初回と二回目以降を if 文で切り分けられる様にする
+- [x] 初回と二回目以降を if 文で切り分けられる様にする
 - [ ] 入力画像サイズを変更できる様にする
-- [ ] 水増しくんの吐き出し先を`npyPractice/data/`にする
-- [ ] print 文（image shape のやつ）が大量に出るのでどうにかする
+- [x] print 文（image shape のやつ）が大量に出るのでどうにかする
 - [ ] Conv2DTranspose 調べる
 
 ### WGAN
