@@ -1,5 +1,6 @@
 from keras.preprocessing.image import array_to_img,img_to_array,load_img
 import numpy as np
+from PIL import Image
 import os
 
 X_train=[]
@@ -8,17 +9,17 @@ Y_train=[]
 X_test=[]
 Y_test=[]
 
-data=os.listdir("categorizePractice/myDataSets/martial/")
+data=os.listdir("categorizePractice/myDataSets/outputFile/")
 for row in data:
     if row == ".DS_Store":
         print("this is .DS_Store")
     elif row == ".gitignore":
         print("this is .gitignore")
     else:
-        i=os.listdir("categorizePractice/myDataSets/martial/"+row)
+        i=os.listdir("categorizePractice/myDataSets/outputFile/"+row)
         n=0
         for target_file in i:
-            image=("categorizePractice/myDataSets/martial/"+row+"/"+target_file)
+            image=("categorizePractice/myDataSets/outputFile/"+row+"/"+target_file)
             if n>5:
                 temp_img=load_img(image)
                 temp_img_array=img_to_array(temp_img)
@@ -31,5 +32,5 @@ for row in data:
                 X_test.append(temp_img_array)
                 Y_test.append(row.split(".")[0])
                 n=n+1
-
-np.savez("categorizePractice/myDataSets/mydatasets.npz",x_train=X_train,y_train=Y_train,x_test=X_test,y_test=Y_test)
+np.save("categorizePractice/myDataSets/mydatasets",X_train,Y_train)
+# np.savez("categorizePractice/myDataSets/mydatasets.npz",x_train=X_train,y_train=Y_train,x_test=X_test,y_test=Y_test)

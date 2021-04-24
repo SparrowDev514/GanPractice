@@ -16,12 +16,14 @@ for i in l:
     if result_dir == "":
         print("this is config file")
     else:
-        os.mkdir("categorizePractice/myDataSets/martial/" + result_dir)
+        os.mkdir("categorizePractice/myDataSets/outputFile/" + result_dir)
         m = os.listdir("categorizePractice/myDataSets/inputFile/" + i)
         n = 0
         for target_file in m:
             origin_image = ("categorizePractice/myDataSets/inputFile/" + i + "/" + target_file)
             if origin_image.split(".")[1] == "gitignore":
+                print(origin_image)
+            elif origin_image.split(".")[1] == "DS_Store":
                 print(origin_image)
             else:
                 cascade = cv2.CascadeClassifier(cascade_path)
@@ -33,19 +35,19 @@ for i in l:
 
                 for x, y, w, h in facerect:
                     face = gray[y:y + h, x:x + w]
-                    face = cv2.resize(face, (128, 128))
-                    save_path = "categorizePractice/myDataSets/martial/" + result_dir + "/image_" + str(n) + ".jpg"
+                    face = cv2.resize(face, (64, 64)) #出力画像を変えるときはここ
+                    save_path = "categorizePractice/myDataSets/outputFile/" + result_dir + "/image_" + str(n) + ".png"
                     cv2.imwrite(save_path, face)
                     n = n + 1
                     face = cv2.flip(face, 1)
-                    save_path = "categorizePractice/myDataSets/martial/" + result_dir + "/image_" + str(n) + ".jpg"
+                    save_path = "categorizePractice/myDataSets/outputFile/" + result_dir + "/image_" + str(n) + ".png"
                     cv2.imwrite(save_path, face)
                     n = n + 1
                     face = cv2.blur(face, (10, 10))
-                    save_path = "categorizePractice/myDataSets/martial/" + result_dir + "/image_" + str(n) + ".jpg"
+                    save_path = "categorizePractice/myDataSets/outputFile/" + result_dir + "/image_" + str(n) + ".png"
                     cv2.imwrite(save_path, face)
                     n = n + 1
                     face = cv2.blur(cv2.flip(face, 1), (10, 10))
-                    save_path = "categorizePractice/myDataSets/martial/" + result_dir + "/image_" + str(n) + ".jpg"
+                    save_path = "categorizePractice/myDataSets/outputFile/" + result_dir + "/image_" + str(n) + ".png"
                     cv2.imwrite(save_path, face)
                     n = n + 1
