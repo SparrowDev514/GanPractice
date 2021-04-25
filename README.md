@@ -28,6 +28,10 @@
 
 - [ ] npy を入り口として動かす
 
+### 動画作るやつ
+
+- [ ] 任意の区間で作れる様にする
+
 ## 参考
 
 http://yusuke-ujitoko.hatenablog.com/entry/2017/05/20/145924<br>

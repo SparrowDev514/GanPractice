@@ -35,7 +35,7 @@ for i in l:
 
                 for x, y, w, h in facerect:
                     face = gray[y:y + h, x:x + w]
-                    face = cv2.resize(face, (64, 64)) #出力画像を変えるときはここ
+                    face = cv2.resize(face, (1024, 1024)) #出力画像を変えるときはここ
                     save_path = "categorizePractice/myDataSets/outputFile/" + result_dir + "/image_" + str(n) + ".png"
                     cv2.imwrite(save_path, face)
                     n = n + 1
