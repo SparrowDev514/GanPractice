@@ -21,6 +21,16 @@
 
 - [ ] スネークケースにする
 
+1. categorizePractice/myDataSets
+2. categorizePractice/myDataSets/inputFile
+3. categorizePractice/myDataSets/outputFile
+4. categorizePractice/src/FaceDetect.py
+5. categorizePractice/src/Features.py
+6. categorizePractice/src/MakeDataset.py
+7. categorizePractice/src/Train.py
+8. imageToNpy
+9. npyPractice/notebook/DCGAN.ipynb
+
 ### DCGAN
 
 - [x] 教師データの入り口を npy にして DCGAN を動かす
