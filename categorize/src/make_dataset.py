@@ -9,17 +9,17 @@ Y_train=[]
 X_test=[]
 Y_test=[]
 
-data=os.listdir("categorizePractice/myDataSets/outputFile/")
+data=os.listdir("categorize/dataset/output/")
 for row in data:
     if row == ".DS_Store":
         print("this is .DS_Store")
     elif row == ".gitignore":
         print("this is .gitignore")
     else:
-        i=os.listdir("categorizePractice/myDataSets/outputFile/"+row)
+        i=os.listdir("categorize/dataset/output/"+row)
         n=0
         for target_file in i:
-            image=("categorizePractice/myDataSets/outputFile/"+row+"/"+target_file)
+            image=("categorize/dataset/output/"+row+"/"+target_file)
             if target_file == ".DS_Store":
                 print('this is DS_Store')
             elif n>5:
@@ -35,5 +35,5 @@ for row in data:
                 X_test.append(temp_img_array)
                 Y_test.append(row.split(".")[0])
                 n=n+1
-np.save("categorizePractice/myDataSets/result",X_train,Y_train)
-# np.savez("categorizePractice/myDataSets/result.npz",x_train=X_train,y_train=Y_train,x_test=X_test,y_test=Y_test)
+np.save("categorize/dataset/result",X_train,Y_train)
+# np.savez("categorize/dataset/result.npz",x_train=X_train,y_train=Y_train,x_test=X_test,y_test=Y_test)

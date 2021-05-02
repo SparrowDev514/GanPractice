@@ -19,17 +19,8 @@
 
 ### 全体
 
-- [ ] スネークケースにする
-
-1. categorizePractice/myDataSets
-2. categorizePractice/myDataSets/inputFile
-3. categorizePractice/myDataSets/outputFile
-4. categorizePractice/src/FaceDetect.py
-5. categorizePractice/src/Features.py
-6. categorizePractice/src/MakeDataset.py
-7. categorizePractice/src/Train.py
-8. imageToNpy
-9. npyPractice/notebook/DCGAN.ipynb
+- [x] ファイル名、ディレクトリ名、変数名を命名規則に則ったものにする
+- [ ] ↑ に伴って、仮想環境名を変更する
 
 ### DCGAN
 
