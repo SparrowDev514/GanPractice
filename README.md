@@ -28,18 +28,15 @@
 - [x] 教師データの入り口を npy にして DCGAN を動かす
 - [x] graphvis を使えるようにする
 - [x] 初回と二回目以降を if 文で切り分けられる様にする
-- [ ] Conv2DTranspose 調べる
+- [x] Conv2DTranspose 調べる
 
 ### WGAN
 
-- [ ] npy を入り口として動かす
-
-### 動画作るやつ
-
-- [ ] 任意の区間で作れる様にする
+- [ ] 動かす
 
 ## 参考
 
 http://yusuke-ujitoko.hatenablog.com/entry/2017/05/20/145924<br>
 https://sinyblog.com/deaplearning/dcgan-001/#i<br>
-https://qiita.com/skyfish20ch/items/781407972c84de05af60
+https://qiita.com/skyfish20ch/items/781407972c84de05af60 <br>
+https://qiita.com/takurooo/items/9a9f387390f5fcf5a516
