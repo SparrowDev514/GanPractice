@@ -1,5 +1,0 @@
-.DS_Store
-.git/
-.idea/
-myDataSets/mydatasets.npz
-myDataSets/train.hdf5
